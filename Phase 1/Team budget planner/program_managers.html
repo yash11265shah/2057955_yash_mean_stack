@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Managers</title>
+  <style>
+    td,th{
+      padding: 10px;
+    }
+  </style>
+  <script src="program_managers.js"></script>
+</head>
+<body style="text-align: center">
+      <table align="center">
+        <thead>
+          <th colspan="2"> Add New Budget</th>
+        </thead>
+        <tbody>
+            <tr>
+              <td> Client Name </td>
+              <td><input type="text" id="clientname"></td>
+            </tr>
+            <tr>
+              <td> Project Name </td>
+              <td><input type="text" id="projectname"></td>
+            </tr>
+             <tr>
+              <td> Budget </td>
+              <td><input type="number" id="budget"></td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center">
+                <input type="button" value="add" onclick="addbudget()">
+                <input type="reset" value="clear">
+              </td>
+            </tr>
+
+        </tbody>
+      </table>
+      <a href="main.html">Back</a>
+</body>
+</html>
