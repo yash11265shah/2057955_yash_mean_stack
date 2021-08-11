@@ -1,4 +1,4 @@
- function addbudget()
+function addbudget()
     {
         var cname=document.getElementById("clientname").value;
         var pname=document.getElementById("projectname").value;
