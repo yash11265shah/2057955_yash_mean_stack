@@ -1,0 +1,52 @@
+<div>
+  <h2>Portfolio form</h2>
+  <h2> welcome {{pfservice.username}}</h2>
+
+  <form  [formGroup]="portfolioref" (ngSubmit)="portfolio()">
+    <table>
+       <tr>
+        <th>contact name</th>
+        <td><input type="text" formControlName="name"/></td>
+
+      </tr>
+      <tr>
+        <th>phone no.</th>
+        <td><input type="text" formControlName="number"/></td>
+
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="save">
+        </td>
+      </tr>
+
+
+    </table>
+   </form>
+       <h2 style="text-align: right">
+
+
+    </h2>
+
+  <table>
+    <tr>
+      <th>
+        name
+      </th>
+      <th>
+        number
+      </th>
+    </tr>
+    <tr *ngFor="let contact of contactdata">
+      <td>
+        {{contact.name}}
+      </td>
+      <td>
+        {{contact.num}}
+      </td>
+    </tr>
+  </table>
+
+      </div>
+
+
