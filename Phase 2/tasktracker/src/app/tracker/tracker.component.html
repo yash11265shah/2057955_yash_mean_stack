@@ -1,0 +1,75 @@
+<h1>task tracker</h1>
+<table>
+  <tr>
+    <td>
+       <h2>task form</h2>
+      <form  [formGroup]="listref" (ngSubmit)="portfolio()">
+    <table>
+       <tr>
+        <th>id</th>
+        <td><input type="text" formControlName="id"/></td>
+
+      </tr>
+      <tr>
+        <th>name</th>
+        <td><input type="text" formControlName="name"/></td>
+
+      </tr>
+      <tr>
+        <th>task</th>
+        <td><textarea cols="30" rows="10" formControlName="task"></textarea></td>
+
+      </tr>
+      <tr>
+        <th>deadline</th>
+        <td><input type="date" formControlName="deadline"/></td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <input type="submit" value="save">
+        </td>
+      </tr>
+
+
+    </table>
+   </form>
+    </td>
+    <td>
+       <table>
+    <tr>
+      <th>
+        id
+      </th>
+      <th>
+        name
+      </th>
+       <th>
+        task
+      </th>
+       <th>
+        deadline
+      </th>
+    </tr>
+    <tr *ngFor="let contact of data">
+      <td>
+        {{contact.id}}
+      </td>
+      <td>
+        {{contact.name}}
+      </td>
+       <td>
+        {{contact.task}}
+      </td>
+       <td>
+        {{contact.deadline}}
+      </td>
+    </tr>
+  </table>
+    </td>
+  </tr>
+</table>
+
+
+
